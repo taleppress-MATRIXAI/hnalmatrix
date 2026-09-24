@@ -1,44 +1,55 @@
 # hnalmatrix
 
-An AI-powered multilingual customer acquisition and lead-generation platform for Moroccan businesses.
+A full SaaS starter for an AI-powered multilingual business platform for Morocco.
 
-## Features
+## What it includes
 
-- AI customer chat for businesses
-- Lead capture from website, WhatsApp, email, and social channels
-- Booking and appointment forms
-- Business dashboard and sales tracking
-- Multi-language support: Arabic, French, English
-- Subscription-based growth model with lead and sales monetization options
+- AI-powered customer acquisition platform concept
+- Business landing page and pricing website
+- Business dashboard and lead pipeline
+- AI customer chat simulation
+- Business setup flow
+- Payments and subscription sections
+- Multilingual positioning in Arabic, French, and English
+- Backend API mock endpoints for dashboard and chat
+- Prisma data model structure for production database setup
 
-## Stack
+## Tech stack
 
 - Next.js 14
 - React 18
 - TypeScript
-- CSS modules and global styling
+- Prisma
+- SQLite-ready Prisma schema
+- Next API routes
 
-## Getting started
+## Local development
 
 1. Install dependencies:
    ```bash
    npm install
    ```
-2. Run the app in development mode:
+2. Create your environment file:
+   ```bash
+   cp .env.example .env
+   ```
+3. Run the app:
    ```bash
    npm run dev
    ```
-3. Open http://localhost:3000
+4. Open http://localhost:3000
 
-## Production deployment
+## Production notes
 
-For production, deploy to a secure host and configure environment variables for:
+For production, you should connect:
 
-- database connection
-- AI provider API key
-- authentication secrets
-- email and messaging providers
+- PostgreSQL instead of SQLite
+- Auth provider (NextAuth, Clerk, or custom JWT)
+- AI provider key for real live chat and lead scoring
+- Payment provider and subscription system
+- Email/WhatsApp integration
+- Business onboarding and role management
 
-## Notes
+## Current project status
 
-This repository currently contains the MVP landing page and dashboard structure for the hnalmatrix platform. The next phase can include authentication, real database integration, AI APIs, and business onboarding flows.
+This is a strong SaaS starter and MVP foundation for hnalmatrix. It is ready to be extended with authentication, database persistence, real AI flows, and production deployment.
